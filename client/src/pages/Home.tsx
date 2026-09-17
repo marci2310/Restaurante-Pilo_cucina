@@ -97,7 +97,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F7F4EE] text-[#2B2B2B] pb-20 md:pb-0">
+    <main className="min-h-screen bg-[#F7F4EE] text-[#2B2B2B]">
       <header className="absolute inset-x-0 top-0 z-30 text-[#F7F4EE]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
           <a href="#top" className="font-serif text-3xl tracking-[-.06em]">pilo<span className="text-[#C5A880]">.</span> <em className="ml-1 text-sm tracking-[.12em] not-italic">cucina</em></a>
@@ -109,4 +109,4 @@ export default function Home() {
         </div>
       </header>
 
-      {navOpen && <div className="fixed inset-0 z-50 bg-[#243224] p-7 text-[#F7F4EE] md:hidden"><div className="flex items-center justify-between"><span className="font-serif text-3xl">pilo<span className="text-[#C5A880]">.</span></span><button onClick={() => setNavOpen(false)} aria-label="Fechar menu"><X /></button></div><div className="mt-24 flex flex-col gap-8 font-serif text-4xl"><button className="text-left" onClick={() => scrollTo("menu")}>Menu</button><button className="text-left" onClick={() => scrollTo("casa")}>A casa</button><button className="text-left" onClick={() => scrollTo("visite")}>Visite-nos</butto
+      {navOpen && <div className="fixed inset-0 z-50 bg-[#243224] p-7 text-[#F7F4EE] md:hidden"><div className="flex items-center justify-between"><span className="font-serif text-3xl">pilo<span className="text-[#C5A880]">.</span></span><button onClick={() => setNavOpen(false)} aria-label="Fechar menu"><X /></button></div><div className="mt-24 flex flex-col gap-8 font-serif text-4xl"><button className="text-left" onClick={() => scrollTo("menu")}>Menu</button><button className="text-left" onClick={() => scrollTo("casa")}>A casa</button><button className="text-left" onClick={() => scrollTo("visite")}>Visite-nos</button><button clas

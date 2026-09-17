@@ -63,7 +63,6 @@ button { cursor: pointer; }
 .pilo-meet-right { transform: translateX(60px); transition-delay: 0.1s; }
 .pilo-meet-left.is-visible, .pilo-meet-right.is-visible { opacity: 1; transform: translateX(0); }
 .pilo-casa-media { overflow-x: hidden; }
-html, body { overflow-x: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-delay: 0s !important; transition-duration: 0.01ms !important; }
@@ -83,3 +82,35 @@ html, body { overflow-x: hidden; }
 .pilo-tab-content { transition: opacity .22s ease, transform .22s cubic-bezier(.22,1,.36,1); }
 .pilo-tab-content.is-menu-exiting { opacity: 0; transform: translateY(8px); }
 .pilo-tab-content.is-menu-visible { opacity: 1; transform: translateY(0); }
+
+html, body { overflow-x: hidden; }
+.pilo-food-card { min-height: 100%; border-radius: 2px; transition: transform .3s ease, border-color .3s ease, background-color .3s ease; }
+.pilo-food-card:hover, .pilo-food-card:focus-visible { transform: translateY(-4px); border-color: #C5A880; outline: none; }
+.pilo-touch-target { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+
+.pilo-order-card { min-height: 44px; }
+
+.pilo-order-card { min-height: 44px; }
+.pilo-order-card:focus-visible { outline: 2px solid #C5A880; outline-offset: 4px; }
+
+.pilo-carousel-arrow { position: absolute; top: 45%; z-index: 5; display: flex; height: 32px; width: 32px; transform: translateY(-50%); align-items: center; justify-content: center; border: 1px solid rgba(197,168,128,.8); border-radius: 999px; background: rgba(28,42,34,.82); color: #C5A880; font-family: Georgia, serif; font-size: 23px; font-weight: 400; line-height: .7; box-shadow: 0 4px 14px rgba(16,24,16,.18); transition: transform .22s ease, background-color .22s ease, border-color .22s ease, box-shadow .22s ease; }
+.pilo-carousel-arrow:hover, .pilo-carousel-arrow:focus-visible { background: #C5A880; border-color: #C5A880; color: #1C2A22; box-shadow: 0 6px 18px rgba(16,24,16,.24); transform: translateY(-50%) scale(1.08); outline: none; }
+@media (min-width: 1024px) { .pilo-carousel-arrow { display: flex; } }
+
+.pilo-order-card { position: relative; overflow: hidden; box-shadow: 0 8px 24px rgba(36,50,36,.06); }
+.pilo-order-card::after { content: ""; position: absolute; inset: 7px; pointer-events: none; border: 1px solid rgba(197,168,128,.22); border-radius: inherit; opacity: .7; }
+.pilo-order-card > span { position: relative; z-index: 1; }
+
+.pilo-food-card .p-5 { padding: 16px; }
+
+.pilo-channel-button { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .14em; }
+.pilo-channel-button:focus-visible { outline: 2px solid #D4C3A3; outline-offset: 4px; }
+
+.pilo-hero-cta { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 4px; padding: 0 18px; font-family: "Plus Jakarta Sans", Arial, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .15em; transition: transform .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease; }
+.pilo-hero-cta:hover { transform: translateY(-2px); }
+.pilo-hero-cta-primary { background: #C5A880; color: #1C2A22; }
+.pilo-hero-cta-primary:hover { background: #D8BC91; }
+.pilo-hero-cta-secondary { border: 1px solid #D4C3A3; color: #F7F4EE; background: rgba(28,42,34,.25); }
+.pilo-hero-cta-secondary:hover { background: #D4C3A3; color: #1C2A22; }
+
+.pilo-hero-copy { text-shadow: 0 2px 4px rgba(0,0,0,.5); }

@@ -4,8 +4,8 @@ import { ArrowRight, CakeSlice, Clock3, Instagram, MapPin, Menu, MessageCircle, 
 const WHATSAPP_URL = "https://wa.me/5581996799134";
 const IFOOD_URL = "https://www.ifood.com.br/delivery/recife-pe/pilo-cucina-boa-viagem/8aed3370-fd84-4550-a884-e962b2f8e5e1?utm_medium=ReserveGoogle";
 const ANOTA_URL = "https://pedido.anota.ai/loja/pilo-cucina?f=ms";
-// TODO: substituir pelo link oficial de reservas do Pilo Cucina no Get In.
-const GETIN_URL = "https://getinapp.com.br/pt/restaurante/pilo-cucina";
+// Link oficial de reservas do Pilo Cucina no Get In.
+const GETIN_URL = "https://reservation.getin.app/MP9rn91L";
 
 type MenuItem = { name: string; description: string; price: string; tag?: string; pairing?: string; allergens?: string };
 const menuData: Record<string, MenuItem[]> = {
